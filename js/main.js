@@ -7,16 +7,11 @@ const btnQuote = document.querySelector('.quote');
 btnQuote.addEventListener('click', recupereQuote);
 
 
-
-
-
-
 function recupereQuote(){
     let url = 'https://api.kanye.rest'
-    let quote = fetch(url)
+   fetch(url)
         .then(response => response.json())
-        .then(json => console.log(json));
-    containerBtn.innerHTML = quote;
+        .then(json => containerBtn.innerHTML += json.quote)
 }
 
 
