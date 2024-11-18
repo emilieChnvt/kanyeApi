@@ -6,7 +6,6 @@ const btnQuote = document.querySelector('.quote');
 
 btnQuote.addEventListener('click', recupereQuote);
 
-
 function recupereQuote(){
     let url = 'https://api.kanye.rest'
    fetch(url)
