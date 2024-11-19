@@ -1,6 +1,7 @@
 .quote{
     font-size: 3rem;
     border-radius:10%
+
 }
 .quote:hover{
     background-color: slategrey;
@@ -10,9 +11,13 @@
     height:100vh;
     display:flex;
     flex-direction:column;
-    align-items:center;
+    align-items:start;
     justify-content: center;
     text-align: center;
+    background-image: url("../images/kanyeA.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .quoteContainer{
